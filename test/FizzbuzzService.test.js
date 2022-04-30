@@ -1,7 +1,7 @@
 describe("Unidad de pruebas para FizzbuzzService", () => {
     test("1)Agregar trick a explorer FIZZBUZZ", () => {
         const FizzbuzzService = require("./../app/lib/services/FizzbuzzService")
-        const explorer1 = {name: "Explorer1", score: 1}
+        const explorer1 = {name: "Explorer1", score: 2}
         expect(FizzbuzzService.applyValidationInExplorer(explorer1)).toStrictEqual({name: "Explorer1", score: 1, trick: 1})
         const explorer3 = {name: "Explorer3", score: 3}
         expect(FizzbuzzService.applyValidationInExplorer(explorer3)).toStrictEqual({name: "Explorer3", score: 3, trick: "FIZZ"})
