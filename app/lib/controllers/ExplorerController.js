@@ -1,7 +1,7 @@
 const ExplorerService = require("./../services/ExplorerService");
 const FizzbuzzService = require("./../services/FizzbuzzService");
 const Reader = require("./../utils/Reader");
-let read = Reader.readJsonFile("./../../explorers.json")
+let read = Reader.readJsonFile("./explorers.json")
 
 class ExplorerController{
     static getExplorersByMission(mission){
@@ -15,7 +15,6 @@ class ExplorerController{
     static getExplorersAmonutByMission(mission){
         let amount = ExplorerService.getAmountOfExplorersByMission(read, mission)
         return amount
-
     }
 }
 
