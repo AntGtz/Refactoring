@@ -4,11 +4,11 @@ class Reader{
     static readJsonFile(path){
         const rawdata = fs.readFileSync(path);
         const explorers = JSON.parse(rawdata);
-        return explorers
+        return explorers;
     }
-   /* static hello(msg){
+    /* static hello(msg){
         return `Hola ${msg}`
     }*/
 }
 
-module.exports = Reader
+module.exports = Reader;
