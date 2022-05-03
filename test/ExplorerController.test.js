@@ -11,4 +11,8 @@ describe("Unidad de pruebas para ExplorerController", () => {
         const ExplorerController = require("./../app/lib/controllers/ExplorerController");
         expect(ExplorerController.getExplorersAmonutByMission("node")).toBe(10);//Devuelve un arreglo con los nombres de usuario que estan en node
     });
+    test("4)Score/FIZZBUZZ", () => {
+        const ExplorerController = require("./../app/lib/controllers/ExplorerController");
+        expect(ExplorerController.fizzbuzz(5)).toBe("BUZZ");
+    });
 });

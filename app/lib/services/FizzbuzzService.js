@@ -17,5 +17,20 @@ class FizzbuzzService{
             return explorer;
         }
     }
+    static applyValidationInNumber(number){
+        if(number%5 === 0 && number%3 === 0){
+            let trick = "FIZZBUZZ";
+            return trick;
+        }else if(number%5 === 0){
+            let trick = "BUZZ";
+            return trick;
+        }else if(number%3 ===0){
+            let trick = "FIZZ";
+            return trick;
+        }else{
+            return number;
+
+        }
+    }
 }
 module.exports = FizzbuzzService;

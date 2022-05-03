@@ -16,6 +16,10 @@ class ExplorerController{
         let amount = ExplorerService.getAmountOfExplorersByMission(read, mission);
         return amount;
     }
+    static fizzbuzz(number){
+        let score = FizzbuzzService.applyValidationInNumber(number);
+        return score;
+    }
 }
 
 module.exports = ExplorerController;
